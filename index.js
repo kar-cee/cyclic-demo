@@ -25,7 +25,9 @@ app.listen(port, () => {
 });
 
 
-
+app.get("/", (req, res) => {
+    res.send("welcome to home")
+})
 
 app.get('/api/menu', (req, res) => {
     res.send(data);
